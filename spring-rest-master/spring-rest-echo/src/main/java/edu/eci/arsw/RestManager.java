@@ -45,7 +45,7 @@ public class RestManager {
     @RequestMapping ( method = RequestMethod.POST )
     public ResponseEntity <?> persist ( @RequestBody Orden orden) {
         //Orden or = new Orden();
-        orden.agregarPlato(new Plato("pizza",7500));
+        //orden.agregarPlato(new Plato("pizza",7500));
         mo.registrarOrden(orden);
         return new ResponseEntity <>( HttpStatus.CREATED );
     }
