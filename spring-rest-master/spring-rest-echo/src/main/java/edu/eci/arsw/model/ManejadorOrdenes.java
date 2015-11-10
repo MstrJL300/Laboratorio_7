@@ -50,7 +50,7 @@ public class ManejadorOrdenes {
 		o.agregarPlato(new Plato("gaseosa 350",200));
 		
 		mo.registrarOrden(o);
-		
+                
 		o=new Orden();
 		
 		o.agregarPlato(new Plato("pizza",7500));

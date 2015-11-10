@@ -1,5 +1,18 @@
 curl -i -X POST -H "Content-Type: application/json" -H "Accept: application/json" http://localhost:8080/ordenes -d ’{ "message": "hello people" }’
-curl -H "Content-Type: application/json" -X POST -d '{ "nombre" : "pizza" , "precio" : "1200"}' http://localhost:8080/ordenes 
+curl -H "Content-Type: application/json" -X POST -d '{ "nombre" : "pizza" , "precio" : "2288" }' http://localhost:8080/ordenes 
+curl -H "Content-Type: application/json" -X POST -d 
+'{ 
+  "orden" : { 
+	     "plato" : { 
+		        "nombre" : "pizza" , "precio" : "1200" 
+                       } 
+            }
+}' http://localhost:8080/ordenes 
+
+curl -H "Content-Type: application/json" -X POST -d '{ "orden" : { "plato" : { "nombre" : "pizza" , "precio" : "1200" } } }' http://localhost:8080/ordenes
+
+curl -H "Content-Type: application/json" -X POST -d '{ "plato" : { "nombre" : "pizza" , "precio" : "2288" } }' http://localhost:8080/ordenes 
+---------------------------
 curl -H "Content-Type: application/json" -X POST -d '{ "message" : "hello people" }' http://localhost:8080/rest/msg
 
 

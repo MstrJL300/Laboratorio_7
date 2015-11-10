@@ -49,4 +49,12 @@ public class RestManager {
         mo.registrarOrden(orden);
         return new ResponseEntity <>( HttpStatus.CREATED );
     }
+    
+    /*@RequestMapping ( method = RequestMethod.POST )
+    public ResponseEntity <?> persist ( @RequestBody Plato plato) {
+        Orden or = new Orden();
+        or.agregarPlato(plato);
+        mo.registrarOrden(or);
+        return new ResponseEntity <>( HttpStatus.CREATED );
+    }*/
 }
