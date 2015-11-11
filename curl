@@ -1,3 +1,34 @@
+curl funcionable:
+
+curl -H "Content-Type: application/json" -X POST -d '{ "platos" : [ { "nombre" : "pizza" , "precio" : "2288" } , { "nombre" : "Malteada" , "precio" : "5000" } , { "nombre" : "Carne humana LOL" , "precio" : "9999999" } ] }' http://localhost:8080/ordenes 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+curl 's no funcionables:
+
 curl -i -X POST -H "Content-Type: application/json" -H "Accept: application/json" http://localhost:8080/ordenes -d ’{ "message": "hello people" }’
 curl -H "Content-Type: application/json" -X POST -d '{ "nombre" : "pizza" , "precio" : "2288" }' http://localhost:8080/ordenes 
 curl -H "Content-Type: application/json" -X POST -d 
